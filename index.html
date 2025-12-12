@@ -6,19 +6,34 @@
     <title>Volatility Hunter</title>
     <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-blue-600 mb-4">
-            Volatility Hunter
-        </h1>
-        <p class="text-gray-700 mb-6">
-            Track market volatility and find opportunities.
-        </p>
-        <button id="alertButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
-            Click Me
-        </button>
-        <p id="output" class="mt-4 text-lg text-gray-800"></p>
+<body class="bg-gray-50 min-h-screen text-gray-900 font-sans p-6">
+    <div id="app-container">
+        <header class="flex items-center justify-between mb-8">
+            <h1>VOLATILITY HUNTER</h1>
+            <input 
+            id="search-input"
+            type="search"
+            class="bg-white border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
+            placeholder="Search..."
+            />
+
+            <p>12:44pm</p>
+        </header>
+        <main>
+            <section id="hero" class="bg-white rounded-3xl shadow-lg p-8 mb-10"></section>
+            <div id="grid-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <section id="gainers" class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h2>Top Gainers</h2>
+                    <div id="gainers-list"></div>
+                </section>
+                <section id="losers" class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h2>Top Losers</h2>
+                    <div id="losers-list"></div>
+                </section>
+            </div>
+        </main>
     </div>
+    
     
     <script src="app.js"></script>
 </body>
