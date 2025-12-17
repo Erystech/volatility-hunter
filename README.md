@@ -1,0 +1,1 @@
+Hello, this is a crypto-dashboard that uses the first !100 coins on coingecko to create a "gainers" and "losers" list of 5 each. Feel free to add & break. This was me practicising api and tailwindcss.
